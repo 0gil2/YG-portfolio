@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+
+    <title>Document</title>
+    <style>
+        *{
+            list-style: none;
+            padding: 0;
+            text-decoration: none;
+        }
+        body {
+            background-image: url(../images/bg.jpg);
+            background-size: cover;
+        }
+
+        .clearfix:after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        div.loginPage{
+            width: 500px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        div.loginPage a:link,
+        div.loginPage a:visited{
+            color: #424242;
+        }
+        div.loginPageLogo{
+            margin: 100px 0;
+        }
+        div.loginPageLogo a img{
+            display: block;
+            margin: 0 auto;
+        }
+        button.kakaoLogin,
+        button.melonLogin{
+            width: 400px;
+            height: 60px;
+            display: block;
+            margin: 20px auto;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 15px;
+            line-height: 60px;
+        }
+        button.kakaoLogin{
+            background-color: #fae100;
+            border: 1px solid #d9d9d9;
+        }
+        button.melonLogin{
+            background-color: white;
+            border: 1px solid #d9d9d9;
+        }
+        button.kakaoLogin img,
+        button.melonLogin img{
+            width: 20px;
+            margin-right: 10px;
+        }
+        div.joinMembership{
+            margin: 60px 0 250px 0;
+            color: yellow;
+        }
+        div.joinMembership a:hover{
+            text-decoration: underline;
+            color: black;
+        }
+        div.loginPageFooter{
+            font-size: 12px;
+        }
+        div.loginPage p{
+            font-size: 12px;
+        }
+        div.loginPageFooter ul{
+            display: inline-block;
+            margin: 0 auto;            
+        }
+        div.loginPageFooter ul li{
+            float: left;
+            padding: 0 10px;
+            border-right: 1px solid #d9d9d9;
+        }
+        div.loginPageFooter ul li:hover{   
+            text-decoration:underline;
+        }
+        div.loginPageFooter ul li:last-child{
+            border: none;
+        }
+        p.enter a:link,
+        p.enter a:visited{
+            color:#9e9e9e;
+        }
+    </style>
+</head>
+<body>
+    <div class="loginPage">
+        <div class="loginPageLogo"><a href="index.html"><img src="images/fLogo.png" alt="로고 이미지"></a></div>
+        <button class="kakaoLogin"><img src="images/kakaoImg2.png" alt="카카오톡 이미지">카카오계정 로그인</button>
+        <button class="melonLogin"><img src="images/melonImg.png" alt="과일이미지"> 메론계정 로그인</button>
+        <div class="joinMembership"><a href="#"> 회원가입</a></div>
+        <div class="loginPageFooter">
+            <ul class="clearfix">
+                <li>
+                    <a href="#">이용약관</a>
+                </li>
+                <li>
+                    <a href="#">위치기반서비스 이용약관</a>
+                </li>
+                <li>
+                    <a href="#">개인정보처리방침</a>
+                </li>
+            </ul>
+        </div>
+        <div class="inquiry"><p>문의전화 : 1566-7727 (평일 09:00-18:00 유료)</p></div>
+        <p class="enter"><a href="https://kakaoent.com/" target="_blank">© Kakao Entertainment Corp.</a></p>
+    </div>
+</body>
+</html>

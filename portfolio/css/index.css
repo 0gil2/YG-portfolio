@@ -1,0 +1,896 @@
+@font-face {
+    font-family: 'Cafe24Ssurround';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* section.home */
+section.home {
+    height: 100vh;
+    background-image: url(../images/overlay2.png), url(../images/overlay3.svg), linear-gradient(45deg, #9dc66b 5%, #4fa49a 30%, #4361c2);
+    background-position: top left, center center, center center;
+    background-size: auto, cover, cover;
+    position: relative;
+    overflow: hidden;
+}
+
+header.headerWrap {
+    width: 100%;
+    height: 80px;
+    background-color: transparent;
+    padding: 16px 0;
+    position: fixed;
+    transition: 0.5s;
+    z-index: 9999;
+}
+
+header.headerWrap.on {
+    padding: 0;
+    background-color: #ffffff;
+    box-shadow: rgb(50 50 93 / 25%) 0px 8px 13px -5px, rgb(0 0 0 / 30%) 0px 8px 16px -8px;
+}
+
+div.headerInner {
+    width: 1280px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+h1 {
+    float: left;
+    line-height: 80px;
+    font-family: 'Cafe24Ssurround';
+}
+
+h1 a {
+    padding: 20px;
+}
+
+nav.gnb {
+    float: right;
+}
+
+nav.gnb ul {
+    font-size: 0;
+}
+
+nav.gnb ul li {
+    float: left;
+    line-height: 80px;
+}
+
+nav.gnb ul li a {
+    padding: 20px;
+    font-size: 20px;
+    position: relative;
+    opacity: 0.8;
+}
+
+nav.gnb ul li a.on {
+    color: rgb(96, 192, 188);
+}
+
+nav.gnb ul li a:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -10px;
+    left: 0;
+    opacity: 0;
+    transition: 0.5s;
+    background-color: rgb(96, 192, 188);
+}
+
+nav.gnb ul li a.on:after {
+    bottom: 5px;
+    opacity: 1;
+}
+
+div.mobileBtn {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    display: none;
+}
+
+div.mobileBtn span {
+    position: absolute;
+    font-size: 30px;
+    transition: 0.5s;
+}
+
+div.mobileBtn span.navClose {
+    opacity: 0;
+}
+
+div.textBox {
+    text-align: center;
+    position: relative;
+    top: 35%;
+}
+
+span.codeIcon {
+    position: fixed;
+    left: 50%;
+    top: 15%;
+    transform: translateX(-50%);
+    font-size: 600px;
+    color: rgba(255, 255, 255, 0.1);
+}
+
+div.textBox p {
+    color: #ffffff;
+}
+
+div.textBox p.welcome {
+    font-size: 45px;
+    font-weight: bold;
+    padding: 60px 0;
+}
+
+div.textBox p.introduce {
+    font-size: 25px;
+}
+
+div.scrollDown {
+    width: 100%;
+    height: 46px;
+    text-align: center;
+    position: absolute;
+    bottom: -50px;
+    transition: 1s ease;
+}
+
+div.scrollDown button.continue {
+    font-size: 16px;
+    display: inline-block;
+    border: 1.5px solid rgba(255, 255, 255, 0.7);
+    border-radius: 5px;
+    line-height: 46px;
+    letter-spacing: 2px;
+    padding: 0 33px;
+    box-sizing: border-box;
+    color: #ffffff;
+    transition: 0.2s;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+div.scrollDown button:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    width: 1px;
+    height: 300px;
+    background-color: white;
+}
+
+div.scrollDown button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* section.about */
+div.aboutMeInner {
+    width: 1280px;
+    margin: 0 auto;
+    padding: 100px 0;
+    text-align: center;
+}
+
+div.aboutMeInner h2 {
+    font-size: 32px;
+    font-weight: 500;
+    display: none;
+    width: 230px;
+}
+
+div.aboutMeInner h2:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    margin: 40px auto;
+    background: rgba(144, 144, 144, 0.5);
+}
+
+div.aboutMeFlex {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+
+div.aboutMe-text {
+    flex: 1;
+    text-align: left;
+}
+
+div.aboutMe-picture {
+    flex: 1;
+    padding-left: 64px;
+}
+
+div.aboutMe-picture img {
+    width: 608px;
+}
+
+div.aboutMe-text h3 {
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 70px;
+}
+
+div.aboutMe-text p {
+    font-size: 19px;
+    font-weight: 300;
+    line-height: 60px;
+}
+
+div.aboutSkill {
+    min-height: 100vh;
+    background-attachment: fixed, fixed;
+    background-image: url(../images/overlay1.png), url(../images/aboutSkill-background.jpg);
+    background-size: auto, cover;
+}
+
+div.aboutSkillInner {
+    width: 1280px;
+    margin: 0 auto;
+    padding: 150px 0 100px 0;
+    display: flex;
+    flex-direction: row;
+}
+
+div.aboutSkillInner div.skill,
+div.aboutSkillInner div.work {
+    flex: 1;
+}
+
+ul.skillList li {
+    width: 170px;
+    height: 170px;
+    display: inline-block;
+    padding: 50px;
+    text-align: center;
+}
+
+ul.skillList li span {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    line-height: 170px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 4px;
+    transform: rotate(45deg);
+}
+
+ul.skillList li span img {
+    width: 52px;
+    vertical-align: middle;
+    transform: rotate(-45deg);
+}
+
+ul.skillList li:nth-child(4) span img {
+    width: 110px;
+}
+
+div.work {
+    padding-left: 80px;
+}
+
+div.work ul.chaseList {
+    padding-top: 80px;
+}
+
+div.work ul.chaseList li.chaseItem {
+    padding-top: 65px;
+}
+
+div.work ul.chaseList li.chaseItem:first-child {
+    padding-top: 0;
+}
+
+div.work ul.chaseList li.chaseItem p.itemName {
+    position: relative;
+}
+
+div.work ul.chaseList li.chaseItem p.itemName i {
+    position: absolute;
+    left: -30px;
+    top: 5px;
+    color: #ffffff;
+}
+
+div.work ul.chaseList li.chaseItem p.itemName b {
+    color: #ffffff;
+    font-size: 22px;
+}
+
+div.work ul.chaseList li.chaseItem p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 20px;
+}
+
+/* section.portfolio */
+div.portfolioInner {
+    width: 1280px;
+    margin: 0 auto;
+    padding: 150px 0 100px 0;
+    text-align: center;
+}
+
+div.portfolioInner h2 {
+    font-size: 32px;
+    font-weight: 500;
+    display: inline-block;
+    width: 300px;
+}
+
+div.portfolioInner h2:after {
+    content: '';
+    display: block;
+    margin: 40px 0;
+    width: 100%;
+    height: 1px;
+    background: rgba(144, 144, 144, 0.5);
+}
+
+ul.portfolioBox li {
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    border: 1px solid white;
+    margin: 50px 0;
+    display: flex;
+    flex-direction: row;
+}
+
+ul.portfolioBox li div.imgBox {
+    width: 45%;
+    text-align: center;
+}
+
+ul.portfolioBox li div.imgBox a {
+    display: inline-block;
+    width: 384px;
+    height: 240px;
+    box-shadow: rgb(0 0 0 / 50%) 0px 5px 15px;
+    overflow: hidden;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+ul.portfolioBox li div.imgBox a img {
+    width: 100%;
+}
+
+div.portfolioInfo {
+    width: 55%;
+    padding: 50px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+div.portfolioInfo h3 {
+    font-size: 25px;
+    position: relative;
+    display: inline-block;
+}
+
+div.portfolioInfo h3:after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    left: -25px;
+    top: -25px;
+}
+
+div.hs h3:after {
+    background-color: #f6ca00;
+}
+
+div.melon h3:after {
+    background-color: #41956C;
+}
+
+div.foodie h3:after {
+    background-color: #5d5d5d;
+}
+
+ul.portfolioBox li:hover h3:after {
+    animation: jump 1s infinite;
+}
+
+@keyframes jump {
+    0% {
+        transform: scale3d(1, 1, 1);
+        animation-timing-function: ease-in;
+    }
+
+    30%,
+    48% {
+        transform: scale3d(0.95, 1.05, 1);
+    }
+
+    55% {
+        transform: scale3d(1.3, 0.6, 1);
+        top: -5px;
+    }
+
+    60%,
+    80% {
+        transform: scale3d(0.95, 1.05, 1);
+    }
+
+    100% {
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+div.portfolioInfo div.infoText {
+    padding-top: 40px;
+    line-height: 25px;
+    font-size: 16px;
+}
+
+table tr th {
+    width: 18%;
+    padding: 5px 15px;
+    vertical-align: top;
+    font-weight: bold;
+    text-align: right;
+}
+
+table tr td {
+    padding: 5px 15px;
+    vertical-align: top;
+    border-left: 5px solid rgb(228, 228, 228);
+    text-align: left;
+}
+
+div.portfolioInfo div.buttonBox {
+    padding-top: 30px;
+    text-align: center;
+}
+
+div.portfolioInfo div.buttonBox a {
+    font-size: 16px;
+    display: inline-block;
+    border: 1.5px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    line-height: 46px;
+    padding: 0 33px;
+    box-sizing: border-box;
+    color: #000000;
+    transition: 0.2s;
+    margin: 0 10px;
+}
+
+div.portfolioInfo a:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* section.contact */
+section.contact {
+    min-height: 100vh;
+    background-attachment: fixed, fixed;
+    background-image: url(../images/overlay1.png), url(../images/aboutSkill-background.jpg);
+    background-size: auto, cover;
+    padding-top: 120px;
+    box-sizing: border-box;
+}
+
+div.contactInner {
+    width: 1280px;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+}
+
+div.contactInner:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 73%;
+    width: 0;
+    height: 0;
+    border: 50px solid transparent;
+    border-top-color: rgba(255, 255, 255, 0.5);
+    border-bottom: 0;
+    border-left: 0;
+    margin-left: -10px;
+    margin-bottom: -50px;
+}
+
+div.contactInner h2 {
+    font-size: 32px;
+    font-weight: 500;
+    display: inline-block;
+    width: 280px;
+    color: #000000;
+    padding-top: 50px;
+}
+
+div.contactInner h2:after {
+    content: '';
+    display: block;
+    margin: 40px 0;
+    width: 100%;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+div.contactInner h3 {
+    font-size: 30px;
+    font-weight: 300;
+    color: #000000;
+    padding-top: 70px;
+    margin: 0 auto;
+}
+
+div.contactInner h3 br.mobileBr {
+    display: none;
+}
+
+div.contactInner a.mail {
+    display: inline-block;
+    font-size: 70px;
+    font-weight: 500;
+    margin-top: 70px;
+    color: #000000;
+    letter-spacing: 2px;
+}
+
+div.contactInner a.mail:hover {
+    color: #4361c2;
+}
+
+div.contactInner p {
+    padding-top: 60px;
+    font-size: 20px;
+}
+
+ul.contactBox {
+    padding: 110px 0 80px 0;
+}
+
+ul.contactBox li {
+    display: inline-block;
+    padding: 0 30px;
+}
+
+div.codingImg {
+    text-align: center;
+    margin-top: 50px;
+}
+
+div.codingImg img {
+    width: 40vw;
+}
+
+ul.contactBox li a i {
+    font-size: 40px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+ul.contactBox li a i:hover {
+    color: #4361c2;
+}
+
+div.contactInner p.position {
+    color: #000000;
+}
+
+div.footer {
+    width: 100%;
+    text-align: center;
+    bottom: 30px;
+}
+
+div.footer p {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 16px;
+    padding-bottom: 20px;
+}
+
+@media screen and (max-width:1280px) {
+
+    /* section.home */
+    div.headerInner {
+        width: 90%;
+    }
+
+    /* section.about */
+    div.aboutMeInner {
+        width: 100%;
+        padding: 60px 0;
+    }
+
+    div.aboutMeFlex {
+        flex-direction: column-reverse;
+    }
+
+    div.aboutMe-text {
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    div.aboutMe-text h3 {
+        margin: 30px 0;
+    }
+
+    div.aboutMe-text p {
+        line-height: 55px;
+    }
+
+    div.aboutMe-picture {
+        padding-left: 0;
+    }
+
+    div.aboutMe-picture img {
+        width: 80%;
+    }
+
+    div.aboutSkillInner {
+        width: 90%;
+        flex-direction: column;
+    }
+
+    div.skill {
+        text-align: center;
+    }
+
+    div.work {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    div.work ul.chaseList li.chaseItem p.itemName {
+        display: inline-block;
+    }
+
+    ul.skillList li {
+        width: 120px;
+        height: 120px;
+        padding: 5%;
+    }
+
+    ul.skillList li span {
+        line-height: 120px;
+    }
+
+    ul.skillList li span img {
+        width: 40px;
+    }
+
+    ul.skillList li:nth-child(4) span img {
+        width: 88px;
+    }
+
+    /* section.portfolio */
+    div.portfolioInner {
+        width: 100%;
+    }
+
+    ul.portfolioBox li {
+        width: 90%;
+        margin: 50px auto;
+        flex-direction: column;
+    }
+
+    ul.portfolioBox li div.imgBox {
+        width: 100%;
+        padding: 80px 40px;
+        box-sizing: border-box;
+    }
+
+    div.portfolioInfo {
+        width: 100%;
+    }
+
+    ul.portfolioBox li div.imgBox a {
+        width: 576px;
+        height: 360px;
+        transform: translateY(0);
+    }
+
+    div.portfolioInfo {
+        text-align: center;
+    }
+
+    div.contactInner {
+        width: 90%;
+    }
+
+    div.contactInner h2 {
+        padding-top: 40px;
+    }
+
+    div.contactInner h3 {
+        font-size: 24px;
+    }
+
+    div.contactInner a.mail {
+        font-size: 56px;
+        margin-top: 60px;
+    }
+
+    div.contactInner p {
+        font-size: 16px;
+    }
+
+    ul.contactBox {
+        padding: 80px 0 50px 0;
+    }
+
+    ul.contactBox li a i {
+        font-size: 32px;
+    }
+}
+
+@media screen and (max-width:767px) {
+
+    /* section.home */
+    nav.gnb {
+        text-align: center;
+        position: fixed;
+        left: 0;
+        top: -100%;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(255, 255, 255, 0.9);
+        transition: 0.5s ease;
+    }
+
+    nav.gnb ul {
+        padding-top: 100px;
+        padding-left: 0;
+    }
+
+    nav.gnb ul li {
+        float: none;
+    }
+
+    nav.gnb ul li a {
+        display: block;
+        padding: 7%;
+        font-size: 30px;
+        opacity: 1;
+    }
+
+    nav.gnb ul li a:after {
+        left: 0;
+        right: 0;
+        width: 40%;
+        margin: 0 auto;
+    }
+
+    div.mobileBtn {
+        display: block;
+    }
+
+    span.codeIcon {
+        font-size: 450px;
+        top: 25%;
+    }
+
+    div.textBox p.welcome {
+        font-size: 40px;
+    }
+
+    div.textBox p.introduce {
+        font-size: 20px;
+    }
+
+    /* section.about */
+    div.aboutMe-text h3 {
+        font-size: 26px;
+    }
+
+    div.aboutMe-text p {
+        font-size: 15px;
+    }
+
+    ul.skillList li {
+        width: 100px;
+        height: 100px;
+    }
+
+    ul.skillList li span {
+        line-height: 100px;
+    }
+
+    ul.skillList li span img {
+        width: 32px;
+    }
+
+    ul.skillList li:nth-child(4) span img {
+        width: 70px;
+    }
+
+    div.work ul.chaseList li.chaseItem p {
+        font-size: 16px;
+    }
+
+    ul.portfolioBox li div.imgBox {
+        padding: 40px;
+    }
+
+    ul.portfolioBox li div.imgBox a {
+        width: 364px;
+        height: 227px;
+    }
+
+    div.portfolioInfo {
+        padding: 40px 0;
+    }
+
+    div.portfolioInfo h3 {
+        font-size: 22px;
+    }
+
+    div.infoText table tr {
+        display: flex;
+        flex-direction: column;
+    }
+
+    div.infoText table tr th,
+    div.infoText table tr td {
+        text-align: left;
+    }
+
+    div.contactInner h3 {
+        padding-top: 30px;
+        line-height: 30px;
+        font-size: 18px;
+    }
+
+    div.contactInner a.mail {
+        margin-top: 50px;
+        font-size: 42px;
+    }
+
+    div.footer p {
+        font-size: 12px;
+        padding-bottom: 10px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    div.contactInner a.mail {
+        font-size: 32px;
+    }
+
+    div.contactInner h3 {
+        padding-top: 20px;
+    }
+
+    div.contactInner h3 br.mobileBr {
+        display: block;
+    }
+
+    ul.contactBox {
+        padding: 60px 0 40px 0;
+    }
+
+    ul.contactBox li a i {
+        font-size: 26px;
+    }
+}

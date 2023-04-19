@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>메론</title>
+    
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+
+    <!-- js -->
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/jquery-ui-1.12.1.min.js"></script>
+    <script src="js/common.js"></script>
+</head>
+<body>
+    <!-- skipMenu -->
+    <ul class="skipMenu">
+        <li>
+          <a href="#albumWrap" title="새로운 앨범 바로가기">새로운 앨범 바로가기</a>
+        </li>
+        <li>
+          <a href="#concertWrap" title="콘서트 바로가기">콘서트 바로가기</a>
+        </li>
+        <li>
+          <a href="#remakeWrap" title="리메이크 바로가기">리메이크 바로가기</a>
+        </li>
+    </ul>
+
+    <!-- scrollNav -->      
+    <div class="scrollNav">
+        <div class="scrollUp">
+            <i class="xi-angle-up"></i>
+        </div>
+        <div class="scrollDown">
+            <i class="xi-angle-down"></i>
+        </div>
+    </div>
+
+    <!-- header -->
+    <header class="headerWrap">
+        <div class="headerInner">
+            <div class="logoWrap">
+                <div class="logoBg">
+                    <img src="images/logoBg3.png" alt="로고 배경 이미지">
+                </div>
+                <h1 class="logo">
+                    <a href="index.html">
+                        <img src="images/logo2.png" alt="로고 이미지" class="pc">
+                    </a>
+                </h1>
+            </div>
+            <div class="navWrap clearfix">
+                <nav class="gnb clearfix">
+                    <ul class="mainMenu">
+                        <li><a href="#;">실시간 챠트</a></li>
+                        <li><a href="#;">보관함</a></li>
+                        <li><a href="#;">메론 TV</a></li>
+                        <li><a href="#;">메론 플레이어</a></li>
+                    </ul>
+                </nav>
+
+                <!-- mobileNav -->
+                <div class="mobileBtn">
+                    <button>모바일버튼
+                      <span class="line01"></span>
+                      <span class="line02"></span>
+                      <span class="line03"></span>
+                    </button>
+                </div>
+
+                <div class="mobileNav">
+                    <div class="loginWrap">
+                        <a href="loginPage.html" class="login"><i class="xi-user-o"></i><span>로그인</span></a>
+                    </div>
+                    <ul class="mobileMainMenu">
+                        <li><a href="#;"><i class="xi-trending-up"></i>실시간 챠트</a></li>
+                        <li><a href="#;"><i class="xi-diskette"></i> 보관함</a></li>
+                        <li><a href="#;"><i class="xi-tv"></i> 메론 TV</a></li>
+                        <li><a href="#;"><i class="xi-radio"></i> 메론 플레이어</a></li>
+                    </ul>
+                </div>
+
+                <fieldset>
+                    <legend>통합검색</legend>
+                    <input type="text" title="검색어 입력" class="searchPlace" placeholder="언제 들어도 신나는 90's ROCK !">
+                    <button class="searchBtn"></button>
+                </fieldset>
+                <button class="login xi-user-o" onclick="location.href='loginPage.html';"><span>로그인</span></button>
+                <div class="navLine"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- banner -->
+    <section class="bannerWrap">
+        <h2>앨범배너</h2>
+        <div class="bannerInner">
+            <ul class="bannerList clearfix">
+                <li class="banner banner1">
+                    <div class="bannerBg">
+                        <div class="titleBox">
+                            <span class="txt1">취중고백 X 김민석 (멜로망스)</span>
+                            <span class="txt2"></span>
+                            <span class="txt3">“취중고백”</span>
+                        </div>
+                        <div class="bannerAlbum"><img src="images/banner_img4.jpg" alt="앨범이미지"></div>
+                    </div>               
+                </li>
+                <li class="banner banner2">
+                    <div class="bannerBg">
+                        <div class="titleBox">
+                            <span class="txt1">적재가창 JTBC 토요스페셜</span>
+                            <span class="txt2">'알고있지만,'</span>
+                            <span class="txt3">OST Part.7</span>
+                        </div>
+                        <div class="bannerAlbum"><img src="images/banner_img2.jpg" alt="앨범이미지"></div>
+                    </div>                    
+                </li> 
+                <li class="banner banner3">
+                    <div class="bannerBg">
+                        <div class="titleBox">
+                            <span class="txt1">'아이유(IU)' 미니 5집</span>
+                            <span class="txt2">[Love poem]</span>
+                            <span class="txt3">@Special Chorus by 하동균</span>
+                        </div>
+                        <div class="bannerAlbum"><img src="images/banner_img3.jpg" alt="앨범이미지"></div>
+                    </div>               
+                </li>
+
+            </ul>
+            <button class="xi-angle-left-thin leftBtn"></button>
+            <button class="xi-angle-right-thin rightBtn"></button>
+        </div>
+    </section>
+
+    <!-- albumWrap -->
+    <section class="albumWrap" id="albumWrap">
+        <div class="albumInner">
+            <div class="newAlbum">
+                <h2 class="subTitle">새로운 앨범</h2>
+                <ul class="newAlbumList">
+                    <li>
+                        <a href="#;"><img src="images/1.png" alt="앨범이미지"></a>
+                        <a href="#;" class="artist">적재</a>
+                        <a href="#;" class="albumInfo">알고있지만, OST Part.7</a>
+                        <div class="hoverBg"></div>
+                    </li>
+                    <li>
+                        <a href="#;"><img src="images/2.png" alt="앨범이미지"></a>
+                        <a href="#;" class="artist">Bruno Mars, Anderson .Paak, Silk Sonic</a>
+                        <a href="#;" class="albumInfo">An Evening With Silk Sonic</a>
+                        <div class="hoverBg"></div>
+                    </li>
+                    <li>
+                        <a href="#;"><img src="images/3.png" alt="앨범이미지"></a>
+                        <a href="#;" class="artist">Billie Eilish</a>
+                        <a href="#;" class="albumInfo">Happier Than Ever</a>
+                        <div class="hoverBg"></div>
+                    </li>
+                    <li>
+                        <a href="#;"><img src="images/4.png" alt="앨범이미지"></a>
+                        <a href="#;" class="artist">CIKI</a>
+                        <a href="#;" class="albumInfo">BUSY DOING NOTHING</a>
+                        <div class="hoverBg"></div>
+                    </li>
+                    <li>
+                        <a href="#;"><img src="images/5.png" alt="앨범이미지"></a>
+                        <a href="#;" class="artist">박재정</a>
+                        <a href="#;" class="albumInfo">취미</a>
+                        <div class="hoverBg"></div>
+                    </li>
+                    <li>
+                        <a href="#;"><img src="images/6.png" alt="앨범이미지"></a>
+                        <a href="#;" class="artist">황치열</a>
+                        <a href="#;" class="albumInfo">인생띵곡</a>
+                        <div class="hoverBg"></div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="todaysAlbum">
+                <h2 class="subTitle">오늘의 추천</h2>
+                <ul class="todaysAlbumList">
+                    <li>
+                        <a href="#;"><img src="images/1-1.png" alt="앨범이미지"></a>
+                        <a href="#;" class="artist">조용필</a>
+                        <a href="#;" class="albumInfo">조용필</a>
+                        <div class="hoverBg"></div>
+                    </li>
+                    <li>
+                        <a href="#;"><img src="images/2-1.png" alt="앨범이미지"></a>
+                        <a href="#;" class="artist">전영</a>
+                        <a href="#;" class="albumInfo">전영 히트 전집</a>
+                        <div class="hoverBg"></div>
+                    </li>
+                    <li>
+                        <a href="#;"><img src="images/3-1.png" alt="앨범이미지"></a>
+                        <a href="#;" class="artist">김만수</a>
+                        <a href="#;" class="albumInfo">김만수 히트 전집</a>
+                        <div class="hoverBg"></div>
+                    </li>
+                    <li>
+                        <a href="#;"><img src="images/4-1.png" alt="앨범이미지"></a>
+                        <a href="#;" class="artist">장계현</a>
+                        <a href="#;" class="albumInfo">골든 베스트 콜렉션</a>
+                        <div class="hoverBg"></div>
+                    </li>
+                    <li>
+                        <a href="#;"><img src="images/5-1.png" alt="앨범이미지"></a>
+                        <a href="#;" class="artist">양희은</a>
+                        <a href="#;" class="albumInfo">양희은 골든 15</a>
+                        <div class="hoverBg"></div>
+                    </li>
+                    <li>
+                        <a href="#;"><img src="images/6-1.png" alt="앨범이미지"></a>
+                        <a href="#;" class="artist">박인희</a>
+                        <a href="#;" class="albumInfo">박인희 힛트곡 전집</a>
+                        <div class="hoverBg"></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- ddiBannerWrap -->
+    <div class="ddiBannerWrap">
+        <div class="ddiBanner">
+            <a href="#;">
+                <img src="images/ddibanner1.png" alt="띠배너이미지">
+            </a>
+            <a href="#;">
+                <img src="images/ddibanner2.png" alt="띠배너이미지">
+            </a>
+        </div>
+    </div>
+
+    <!-- concertWrap -->
+    <section class="concertWrap" id="concertWrap">
+        <div class="concertInner">
+            <div class="concert">
+                <h2 class="subTitle">콘서트</h2>
+                <ul class="concertList">
+                    <li>
+                        <a href="#;" class="eventA">
+                            <img src="images/concert1.png" alt="콘서트포스터">
+                        </a>
+                        <div class="concertInfo">
+                            <div class="concertPoster">
+                                <img src="images/concert1.jpg" alt="콘서트포스터">
+                            </div>
+                            <div class="concertTxt">
+                                <p class="title">결(KYUL)첫 단독 공연 "Things I Loved Most"</p>
+                                <p class="titleSub">결이 직접 여는 첫 단독 콘서트！내가 사랑했던 것들을 나누는 시간</p>
+                                <div class="concertDetail">
+                                    <dl class="detailLeft">
+                                        <dt>공연기간</dt>
+                                        <dd>2023.09.28 - 2023.09.29</dd>
+                                        <dt>관람시간</dt>
+                                        <dd>90분</dd>
+                                        <dt>장르</dt>
+                                        <dd>콘서트</dd>
+                                    </dl>
+                                    <dl class="detailRight">
+                                        <dt>공연장</dt>
+                                        <dd>롤링홀</dd>
+                                        <dt>관람등급</dt>
+                                        <dd>8세 이상</dd>
+                                    </dl>
+                                </div>
+                            </div>
+                            <button class="reservationBtn">예매하기</button>
+                            <button class="closeBtn xi-close"></button>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#;" class="eventA">
+                            <img src="images/concert2.png" alt="콘서트포스터">
+                        </a>
+                        <div class="concertInfo">
+                            <div class="concertPoster">
+                                <img src="images/concert2.jpg" alt="콘서트포스터">
+                            </div>
+                            <div class="concertTxt">
+                                <p class="title">[안예은 한국소아암재단과 함께하는 BLUE CONCERT]</p>
+                                <p class="titleSub">독보적인 음악 스타일의 싱어송라이터 안예은의 단독 콘서트가 8월 21일 개최됩니다！<br>신비로운 안예은의 음색을 라이브로 감상 가능한 몽환적인 콘서트를 지금이 아니면 경험할 수 없는 단 하루의 기회！<br>놓치고 싶지 않은 특별한 토크 시간과 즐거운 이벤트까지！함께 즐겨볼까요？</p>
+                                <div class="concertDetail clearfix">
+                                    <dl class="detailLeft">
+                                        <dt>공연기간</dt>
+                                        <dd>2023.08.21 - 2023.08.21</dd>
+                                        <dt>관람시간</dt>
+                                        <dd>70분</dd>
+                                        <dt>장르</dt>
+                                        <dd>콘서트</dd>
+                                    </dl>
+                                    <dl class="detailRight">
+                                        <dt>공연장</dt>
+                                        <dd>드림홀</dd>
+                                        <dt>관람등급</dt>
+                                        <dd>8세 이상</dd>
+                                    </dl>
+                                </div>
+                            </div>
+                            <button class="reservationBtn">예매하기</button>
+                            <button class="closeBtn xi-close"></button>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#;" class="eventA">
+                            <img src="images/concert3.png" alt="콘서트포스터">
+                        </a>
+                        <div class="concertInfo">
+                            <div class="concertPoster">
+                                <img src="images/concert3.jpg" alt="콘서트포스터">
+                            </div>
+                            <div class="concertTxt">
+                                <p class="title">from.최낙타</p>
+                                <p class="titleSub">이 밤이 너무 길어서 네 생각이 자꾸 났어</p>
+                                <div class="concertDetail">
+                                    <dl class="detailLeft">
+                                        <dt>공연기간</dt>
+                                        <dd>2023.10.21 - 2023.10.21</dd>
+                                        <dt>관람시간</dt>
+                                        <dd>90분</dd>
+                                        <dt>장르</dt>
+                                        <dd>콘서트</dd>
+                                    </dl>
+                                    <dl class="detailRight">
+                                        <dt>공연장</dt>
+                                        <dd>KT&G 상상마당 홍대 라이브홀</dd>
+                                        <dt>관람등급</dt>
+                                        <dd>8세 이상</dd>
+                                    </dl>
+                                </div>
+                            </div>
+                            <button class="reservationBtn">예매하기</button>
+                            <button class="closeBtn xi-close"></button>
+                        </div>
+                    </li>
+                    <li class="moreConcert">
+                        <a href="#;">
+                            <img src="images/moreConcert1.jpg" alt="콘서트포스터">
+                            <img src="images/moreConcert2.jpg" alt="콘서트포스터">
+                            <img src="images/moreConcert3.jpg" alt="콘서트포스터">
+                            <img src="images/moreConcert4.jpg" alt="콘서트포스터">
+                            <span>더보기</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="bgLayer"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- remakeWrap -->
+    <section class="remakeWrap" id="remakeWrap">
+        <div class="remakeInner">
+            <h2 class="subTitle"><span data-text="리:메이크">리:메이크</span></h2>
+            <div class="remakeAll">
+                <div class="original">
+                    <div class="originalAlbum">
+                        <a href="images/trackList1.png" target="_blank">
+                            <img src="images/ms-album.jpg" alt="오리지널 앨범 이미지">
+                        </a>
+                        <div class="disk">
+                            <div class="diskInner"></div>
+                        </div>
+                        <div class="subText">
+                            <span class="albumName">이문세 골든 15</span>
+                            <br>
+                            <span class="release">1987.06.01</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="songName">
+                    <div class="topText">
+                        <span>&#9834;</span>
+                        <span>사</span>
+                        <span>랑</span>
+                        <span>이</span>
+                    </div>
+                    <div class="bottomText">
+                        <span>지</span>
+                        <span>나</span>
+                        <span>가</span>
+                        <span>면</span>
+                        <span>&#9834;</span>
+                    </div>
+                </div>
+                <div class="remake">
+                    <div class="remakeAlbum">   
+                        <a href="images/trackList2.2.png" target="_blank">
+                            <img src="images/iu-album.jpg" alt="리메이크 앨범 이미지">
+                        </a>
+                        <div class="disk">
+                            <div class="diskInner"></div>
+                        </div>
+                        <div class="subText">
+                            <span class="albumName">꽃갈피</span>
+                            <br>
+                            <span class="release">2014.5.16</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footerWrap">
+        <div class="footerInner">
+            <div class="fTop clearfix">
+                <div class="fTopLeft">
+                    <ul class="clearfix">
+                        <li><a href="#;">회사소개</a></li>
+                        <li><a href="#;">이용약관</a></li>
+                        <li><a href="#;">인재채용</a></li>
+                        <li><a href="#;">제휴문의</a></li>
+                        <li><a href="#;">개인정보처리방침</a></li>
+                        <li><a href="#;">청소년보호정책</a></li>
+                    </ul>
+                </div>
+                <div class="fTopRight">
+                    <ul class="clearfix">
+                        <li>
+                            <a href="https://www.instagram.com/melon_music/" target="_blank">
+                                <img src="images/instagram.png" alt="인스타그램 아이콘">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/MelonDJ/" target="_blank">
+                                <img src="images/facebook.png" alt="페이스북 아이콘">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/melon" target="_blank">
+                                <img src="images/twitter.png" alt="트위터 아이콘">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="fBottom">
+                <h2 class="fLogo">
+                    <img src="images/fLogo.png" alt="푸터 로고 이미지">
+                </h2>
+                <div class="fInfo">
+                    <p>상호명 : (주)카카오엔터테인먼트 대표이사 : 이진수, 김성수<br>사업자등록번호 : 220-88-02594<br>통신판매업신고번호 : 2018-성남분당B-0004<br>주소 : 경기도 성남시 분당구 판교역로 221<br>이메일 : melon_info@kakaocorp.com © Melon Company Corp.</p>
+                </div>
+                <div class="fSc">
+                    <p>SERVICE CENTER</p>
+                    <p>1566-7727</p>
+                    <p>평일 09:00-18:00</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
