@@ -855,6 +855,9 @@ div.footer p {
     div.infoText table tr td {
         text-align: left;
     }
+    div.infoText table tr th{
+        width: 100%;
+    }
 
     div.contactInner h3 {
         padding-top: 30px;
@@ -892,5 +895,21 @@ div.footer p {
 
     ul.contactBox li a i {
         font-size: 26px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    ul.portfolioBox li div.imgBox {
+        padding: 20px;
+    }
+    ul.portfolioBox li div.imgBox a{
+        width: 284px;
+        height: 176px;
+    }
+    div.portfolioInfo div.buttonBox a{
+        padding: 0 15px;
+    }
+    div.contactInner a.mail{
+        font-size: 24px;
     }
 }

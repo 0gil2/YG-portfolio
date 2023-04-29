@@ -229,7 +229,6 @@ span.line03{
     top: 17px;
 }
 
-
 /* mobileBtn animation */
 span.line01.on{
     top:9px
@@ -695,8 +694,6 @@ div.bgLayer{
     opacity:0;
     z-index: 4;
 }
-/* 공사중 */
-
 
 /* remake section */
 section.remakeWrap{
@@ -775,10 +772,6 @@ div.remakeInner h2.subTitle span::after{
         transform: translate(-1px, 1px);
     }
 }
-
-
-
-
 div.remakeInner div.remakeAll{
     width: 1000px;
     height: auto;
@@ -839,7 +832,6 @@ div.remakeAlbum div.disk div.diskInner:after{
     background-color: black;
     border-radius: 50%;
 }  
-
 div.remakeAll div.originalAlbum a img,
 div.remakeAll div.remakeAlbum a img{
     width: 100%;
@@ -869,7 +861,6 @@ div.songName{
     line-height: 40px;
     transform: translateY(-50%);
 }
-
 div.songName div.topText{
     text-indent: -30px;
 }
@@ -879,7 +870,6 @@ div.songName span{
     width: 17px;
     font-size: 25px;
 }
-
 div.topText span:nth-child(1){
     animation-delay: 0.1s;
 }
@@ -1010,7 +1000,6 @@ div.fBottom div.fSc p:nth-child(2){
 div.fBottom div.fSc p:nth-child(3){
     font-size: 18px;
 }
-
 .mobileLogo{
     display: none;
 }
@@ -1045,7 +1034,6 @@ div.fBottom div.fSc p:nth-child(3){
     button.rightBtn{
         right: 30%;
     }
-
 }
 @media screen and (max-width:1250px){
     div.titleBox, div.bannerAlbum{
@@ -1070,7 +1058,6 @@ div.fBottom div.fSc p:nth-child(3){
         position: absolute;
         right: 20px;
     }
-
     div.ddiBannerWrap{
         display: none;
     }
@@ -1151,6 +1138,7 @@ div.fBottom div.fSc p:nth-child(3){
         text-decoration:underline;
     }
 }
+
 /* tablet */
 @media screen and (max-width:1023px){
     div.bannerInner{
@@ -1449,3 +1437,18 @@ div.fBottom div.fSc p:nth-child(3){
 
 }
 
+@media screen and (max-width:480px){
+    div.remakeAll div.original, 
+    div.remakeAll div.remake{
+        width: 180px;
+    }
+    div.remakeAll div.originalAlbum, 
+    div.remakeAll div.remakeAlbum{
+        width: 130px;
+    }
+    div.originalAlbum div.disk, 
+    div.remakeAlbum div.disk{
+        width: 123px;
+        height: 123px;
+    }
+}
