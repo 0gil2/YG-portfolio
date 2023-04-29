@@ -29,7 +29,8 @@
     clear: both;
 }
 
-html,body {
+html,
+body {
     font-family: 'Noto Sans KR', sans-serif;
 }
 
@@ -197,7 +198,6 @@ div.section {
 
 
 /* visualWrap  - section 1 */
-
 div.page01 ul.visualList {
     width: 100%;
     height: 100vh;
@@ -259,12 +259,14 @@ div.page01 div.textWrap p {
     margin-bottom: 50px;
     font-family: 'NotoSerifKR';
 }
-div.page01 div.textWrap p span{
+
+div.page01 div.textWrap p span {
     color: #ffffff;
     font-family: 'SeoulHangang';
     font-size: 40px;
     font-weight: 500;
 }
+
 div.page01 div.textWrap img {
     width: 95px;
     position: relative;
@@ -292,7 +294,6 @@ div.mainSlideBtn {
     left: 50%;
     transform: translateX(-50%);
     font-size: 20px;
-    /* text-align: center; */
 }
 
 div.mainSlideBtn div.arrowBtn button,
@@ -333,8 +334,6 @@ div.autoPlayBtn button.playBtn {
     top: 50%;
     transform: translate(-50%, -50%);
 }
-
-/* visualWrap  - page01 end */
 
 /* visualWrap  - page02 */
 div.page02 {
@@ -502,9 +501,6 @@ div.visualInner02 ul.composition li div.explain:hover p {
     display: block;
 }
 
-/* visualWrap  - page02 end */
-
-
 /* visualWrap  - page03 */
 div.page03 {
     background-image: url(../images/page3-background.png);
@@ -552,20 +548,24 @@ div.page03 div.textWrap h2:after {
     background-image: url(../images/quotes-right.png);
 
 }
-div.page03 div.notice{
+
+div.page03 div.notice {
     position: absolute;
     top: 50px;
     left: 50px;
 }
-div.page03 div.notice img{
+
+div.page03 div.notice img {
     width: 4%;
     vertical-align: middle;
 }
+
 div.page03 div.notice span {
     margin-left: 10px;
     vertical-align: middle;
     font-size: 16px;
 }
+
 div.page03Left {
     width: 50%;
     height: 100%;
@@ -747,8 +747,6 @@ div.xi-angle-right-thin {
     opacity: 0.4;
 }
 
-/* visualWrap  - page03 end*/
-
 /* visualWrap  - page04 */
 div.page04 {
     background-image: url(../images/page4-background.png);
@@ -858,22 +856,23 @@ div.page04 div.photoWrap ul.photoPreview li {
     overflow: hidden;
     box-sizing: border-box;
 }
-div.page04 div.photoWrap ul.photoPreview li a img{
+
+div.page04 div.photoWrap ul.photoPreview li a img {
     width: 100%;
     height: 100%;
     transition: 0.5s;
 }
-div.page04 div.photoWrap ul.photoPreview li:hover a img{
+
+div.page04 div.photoWrap ul.photoPreview li:hover a img {
     transform: scale(1.09);
 }
+
 div.page04.active div.photoWrap {
     transform: translateX(0px);
     opacity: 1;
 }
 
-/* visualWrap  - page04 end */
-
-/* visualWrap  - page5 */
+/* visualWrap  - page05 */
 div.page05 {
     background-image: url(../images/page5-background.png);
 }
@@ -953,8 +952,6 @@ div.page05 a.moreDetail:hover {
     transform: translateX(30px);
 }
 
-/* visualWrap  - page05 end */
-
 /* footer */
 footer.footerWrap {
     width: 100%;
@@ -979,11 +976,13 @@ footer.footerWrap div.footerInner div.map {
     height: 332px;
     margin-bottom: 54px;
 }
-footer.footerWrap div.footerInner div.map iframe{
+
+footer.footerWrap div.footerInner div.map iframe {
     width: 100%;
     height: 332px;
     border: none;
 }
+
 div.map div.mapBtn {
     position: absolute;
     bottom: 370px;
@@ -1030,9 +1029,10 @@ footer.footerWrap div.footerInner address p.address {
     text-indent: 15px;
 }
 
-footer.footerWrap div.footerInner address table.companyInformation{
+footer.footerWrap div.footerInner address table.companyInformation {
     width: 100%;
-  }
+}
+
 footer.footerWrap div.footerInner address table.companyInformation tr {
     border-top: 1px solid #b3b3b3;
 }
@@ -1052,5 +1052,3 @@ footer.footerWrap div.footerInner table.companyInformation td:nth-child(2) {
 footer.footerWrap div.footerInner table.companyInformation td:nth-child(3) {
     line-height: 24px;
 }
-
-/* footer end */

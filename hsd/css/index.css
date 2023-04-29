@@ -1,8 +1,7 @@
-/* index.html */
-
 /* font setup */
+
+/* 국문bold */
 @font-face {
-  /* 국문bold */
   font-family: 'NotoSans';
   font-weight: bold;
   src: local('NotoSans'),
@@ -14,8 +13,8 @@
   /*ttf*/
 }
 
+/* 국문medium */
 @font-face {
-  /* 국문medium */
   font-family: 'NotoSans';
   font-weight: 500;
   src: local('NotoSans'),
@@ -26,8 +25,8 @@
   /*ttf*/
 }
 
+/* 국문regular */
 @font-face {
-  /* 국문regular */
   font-family: 'NotoSans';
   font-weight: normal;
   src: local('NotoSans'),
@@ -77,30 +76,6 @@
   /*ttf*/
 }
 
-/* 웹폰트 포멧 종류 
-
-ttf : true type font
-애플, ms에서 제작한 가장 기본적인 폰트 타입
-
-otf : open type font 
-true type을 기본으로 하는 확장폰트
-
-woff : web open font 포맷
-웹페이지 내에서 사용되는 걸 목적으로 html5가 나왔을 때( 2005~2007 )에 W3C에세 권고사항으로 지정된 폰트타입,
-압축률이나 구현률로는 웹에서 가장 최적화 된 포멧
-
-woff2 : woff의 업그레이드 버전 (호환성이 낮아)
-
-eot : 엠베디드 오픈타입
-ms에서 만든 오픈타입을 기반으로 하는 확장 폰트
-
-svg
-벡터 기반으로 하는 이미지 형태(폰트가 아님)
-백터 기반의 이미지 타입이기 때문에 랜더링이 완료된 것이 아닌 사이즈에 따라 이미지의 크기가
-컴퓨터가 자동으로 조절해주기 때문에 사이즈의 손상이 없지만 용량이 크다.
-
-*/
-
 html,
 body {
   font: normal 16px 'NotoSans';
@@ -133,10 +108,10 @@ ul.skipMenu>li>a:focus {
   font-size: 14px;
   line-height: 30px;
   text-align: center;
+  z-index: 2;
 }
 
-
-/* header시작 */
+/* header */
 header.headerWrap {
   width: 100%;
   height: 120px;
@@ -327,7 +302,6 @@ div.mainBg {
   height: 350px;
   top: 90px;
   left: 0px;
-  /* z-index: 9990; */
   background-color: rgba(255, 255, 255, .9);
 }
 
@@ -347,10 +321,6 @@ nav.mobileNav {
 nav.mobileNav>ul {
   width: 100%;
   height: 100%;
-}
-
-nav.mobileNav>ul>li {
-  /* margin-bottom: 40px; */
 }
 
 nav.mobileNav>ul>li>a {
@@ -612,10 +582,6 @@ a.pausePlayBtn.on {
   background-position: 30px 30px;
 }
 
-/* visual end */
-
-
-
 /* active */
 li.active {
   width: 48.7%;
@@ -705,8 +671,6 @@ li.active a:hover span.iconImg {
   background-position: -20px 0px;
 }
 
-/* active end */
-
 div.tBanner {
   width: 100%;
   margin: 0px auto;
@@ -790,9 +754,6 @@ div.franList ul li.active {
   height: 440px;
 }
 
-/* content01wrap end */
-
-
 div.brandWrap {
   width: 100%;
   height: 600px;
@@ -872,10 +833,6 @@ div.brandInner h2.titleBox a:hover {
   color: #373737;
   background-color: #ffffff;
 }
-
-/* brand end */
-
-
 
 div.content02Wrap {
   width: 100%;
@@ -1071,8 +1028,6 @@ ul.fNav {
   height: 100%;
   width: 100%;
   font-size: 0px;
-  /* inline-block을 주게되면 font의 성질 + 벽을 같이 갖게 돼서
-그걸 초기화 하고 밑에 ul.fNav li a{} 에서 다시 font-size를 준다. */
 }
 
 ul.fNav li {

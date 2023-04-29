@@ -1,7 +1,8 @@
-@font-face{
+@font-face {
     font-family: '장미다방';
     src: url(../font/장미다방.otf)
 }
+
 @font-face {
     font-family: 'ChosunCentennial';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/ChosunCentennial.woff2') format('woff2');
@@ -13,18 +14,20 @@ body {
     background-image: url(../images/bg.jpg);
     background-size: cover;
 }
+
 section.bannerWrap,
-section.remakeWrap{
+section.remakeWrap {
     font-family: '장미다방';
 }
-.clearfix:after{
+
+.clearfix:after {
     content: "";
     display: block;
     clear: both;
 }
 
 /* skipMenu */
-ul.skipMenu li a{
+ul.skipMenu li a {
     width: 1px;
     height: 1px;
     display: block;
@@ -34,8 +37,9 @@ ul.skipMenu li a{
     position: absolute;
     top: 0;
     left: 0;
-} 
-ul.skipMenu li a:focus{
+}
+
+ul.skipMenu li a:focus {
     width: 200px;
     height: 30px;
     color: white;
@@ -47,15 +51,16 @@ ul.skipMenu li a:focus{
 }
 
 /* pageScroll */
-div.scrollNav{
+div.scrollNav {
     position: fixed;
     right: -50px;
     bottom: 80px;
     z-index: 9999;
     transition: all 0.5s ease-in-out;
 }
+
 div.scrollUp,
-div.scrollDown{
+div.scrollDown {
     cursor: pointer;
     width: 38px;
     height: 38px;
@@ -65,74 +70,86 @@ div.scrollDown{
     border-radius: 50%;
     text-align: center;
 }
-div.scrollUp{
+
+div.scrollUp {
     margin-bottom: 5px;
 }
 
 /* header */
-header.headerWrap{
+header.headerWrap {
     width: 100%;
     height: auto;
 }
-div.headerInner{
+
+div.headerInner {
     width: 85%;
     height: auto;
     margin: 0 auto;
 }
-div.logoWrap{
+
+div.logoWrap {
     width: 85%;
     height: auto;
     position: relative;
     margin: 0 auto;
     margin-bottom: 108px;
 }
-div.logoWrap div.logoBg{
+
+div.logoWrap div.logoBg {
     width: 100%;
 }
-div.logoWrap div.logoBg img{
+
+div.logoWrap div.logoBg img {
     width: 100%;
 }
-h1.logo{
+
+h1.logo {
     width: 27%;
     position: absolute;
     top: 35%;
     left: 50%;
     transform: translateX(-50%);
 }
-h1.logo a img.pc{
+
+h1.logo a img.pc {
     width: 100%;
 }
 
-div.navWrap{
+div.navWrap {
     width: 90%;
     height: 50px;
     position: relative;
     margin: 0 auto;
     margin-bottom: 50px;
 }
-nav.gnb{
+
+nav.gnb {
     height: 100%;
     position: absolute;
     top: 0;
     left: 0;
 }
-ul.mainMenu{
+
+ul.mainMenu {
     float: left;
     height: 100%;
 }
-ul.mainMenu li{
+
+ul.mainMenu li {
     float: left;
     height: 100%;
     padding: 0 13px;
     font-size: 16px;
 }
-ul.mainMenu li a{
+
+ul.mainMenu li a {
     display: block;
     height: 100%;
     line-height: 50px;
     font-weight: 600;
 }
-div.navWrap fieldset{
+
+div.navWrap fieldset {
     height: 75%;
     position: relative;
     right: 80px;
@@ -141,10 +158,12 @@ div.navWrap fieldset{
     border: 3px solid rgb(65, 149, 108);
     border-radius: 20px;
 }
-div.navWrap fieldset legend{
+
+div.navWrap fieldset legend {
     text-indent: -9999px;
 }
-div.navWrap fieldset input{
+
+div.navWrap fieldset input {
     width: 80%;
     border: none;
     background-color: transparent;
@@ -154,8 +173,9 @@ div.navWrap fieldset input{
     bottom: 5px;
     position: absolute;
 }
-div.navWrap fieldset button.searchBtn{ 
-    background: transparent url(../images/search.png) center center / contain no-repeat ;
+
+div.navWrap fieldset button.searchBtn {
+    background: transparent url(../images/search.png) center center / contain no-repeat;
     position: absolute;
     right: 10px;
     top: 50%;
@@ -166,7 +186,7 @@ div.navWrap fieldset button.searchBtn{
     cursor: pointer;
 }
 
-div.navWrap button.login{
+div.navWrap button.login {
     height: 100%;
     position: absolute;
     top: 0;
@@ -176,10 +196,12 @@ div.navWrap button.login{
     cursor: pointer;
     font-size: 30px;
 }
-div.navWrap button.login span{
+
+div.navWrap button.login span {
     display: none;
 }
-div.navLine{
+
+div.navLine {
     width: 100%;
     height: 4px;
     position: absolute;
@@ -189,7 +211,7 @@ div.navLine{
 }
 
 /* mobileBtn */
-div.mobileBtn{
+div.mobileBtn {
     width: 25px;
     height: 22px;
     position: absolute;
@@ -198,7 +220,8 @@ div.mobileBtn{
     z-index: 9999;
     display: none;
 }
-div.mobileBtn button{
+
+div.mobileBtn button {
     display: block;
     width: 100%;
     height: 100%;
@@ -209,7 +232,8 @@ div.mobileBtn button{
     cursor: pointer;
     text-indent: -9999px;
 }
-div.mobileBtn button span{
+
+div.mobileBtn button span {
     display: block;
     width: 100%;
     height: 4px;
@@ -219,33 +243,39 @@ div.mobileBtn button span{
     transition: all 0.5s;
     border-radius: 3px;
 }
-span.line01{
+
+span.line01 {
     top: 0px;
 }
-span.line02{
+
+span.line02 {
     top: 9px;
 }
-span.line03{
+
+span.line03 {
     top: 17px;
 }
 
 /* mobileBtn animation */
-span.line01.on{
-    top:9px
-  }
-span.line02.on{
+span.line01.on {
+    top: 9px
+}
+
+span.line02.on {
     transform: scaleX(0);
-  }
-span.line03.on{
+}
+
+span.line03.on {
     transform: rotate(90deg);
     top: 9px;
-  }
-div.mobileBtn button.on{
+}
+
+div.mobileBtn button.on {
     transform: rotate(45deg);
-  }
-  
+}
+
 /* mobileNav */
-div.mobileNav{
+div.mobileNav {
     position: fixed;
     width: 100%;
     height: 100%;
@@ -256,59 +286,70 @@ div.mobileNav{
     background-color: white;
     display: none;
 }
-div.loginWrap{
+
+div.loginWrap {
     width: 100%;
     padding: 20px;
     border-bottom: 1px solid #eee;
 }
-a.login{
+
+a.login {
     background-color: transparent;
     height: 56px;
     display: inline-block;
-    padding-right:20px;
+    padding-right: 20px;
 }
-a.login i.xi-user-o{
+
+a.login i.xi-user-o {
     border: 3px solid rgba(66, 211, 103, 0.5);
     border-radius: 50%;
     font-size: 50px;
 }
-a.login i.xi-user-o::before{
+
+a.login i.xi-user-o::before {
     opacity: 0.1;
 }
-a.login span{
+
+a.login span {
     display: inline-block;
     vertical-align: middle;
     height: 100%;
     padding-left: 20px;
 }
-ul.mobileMainMenu{
+
+ul.mobileMainMenu {
     width: 100%;
 }
-ul.mobileMainMenu li{
+
+ul.mobileMainMenu li {
     height: 50px;
     line-height: 50px;
     font-size: 15px;
     border-bottom: 1px solid #eee;
 }
-ul.mobileMainMenu li a{
-    padding:15px 20px;
+
+ul.mobileMainMenu li a {
+    padding: 15px 20px;
 }
-ul.mobileMainMenu li a i{
+
+ul.mobileMainMenu li a i {
     margin-right: 20px;
     font-size: 20px;
 }
 
 /* banner section */
-section.bannerWrap{
+section.bannerWrap {
     width: 100%;
     height: 490px;
     margin-top: 30px;
     margin-bottom: 30px;
 }
-section.bannerWrap h2{
+
+section.bannerWrap h2 {
     display: none;
 }
-div.bannerInner{
+
+div.bannerInner {
     width: 1400px;
     height: 100%;
     margin: 0 auto;
@@ -316,74 +357,89 @@ div.bannerInner{
     overflow: hidden;
     border-radius: 20px;
 }
-ul.bannerList{
+
+ul.bannerList {
     width: 100%;
     position: absolute;
 }
-ul.bannerList li.banner{
+
+ul.bannerList li.banner {
     width: 1400px;
     height: 490px;
-    display:block;
+    display: block;
     float: left;
 }
-li.banner div.bannerBg{
+
+li.banner div.bannerBg {
     width: 100%;
     height: 490px;
 }
-ul.bannerList li.banner1 div.bannerBg{
-    background: linear-gradient(135deg, rgba(0,0,0,0.6), rgba(17,124,209,0.6), rgba(120,117,188,0.6));
-}
-ul.bannerList li.banner2 div.bannerBg{
-    background: linear-gradient(135deg, rgba(128,184,199,0.6), rgba(241,146,26,0.6),rgba(225,190,36,0.6));
-}
-ul.bannerList li.banner3 div.bannerBg{
-    background: linear-gradient(135deg, rgba(163,179,134,0.6), rgba(235,212,222,0.6),rgba(105,118,173,0.6));
+
+ul.bannerList li.banner1 div.bannerBg {
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.6), rgba(17, 124, 209, 0.6), rgba(120, 117, 188, 0.6));
 }
 
-div.titleBox, 
-div.bannerAlbum{
+ul.bannerList li.banner2 div.bannerBg {
+    background: linear-gradient(135deg, rgba(128, 184, 199, 0.6), rgba(241, 146, 26, 0.6), rgba(225, 190, 36, 0.6));
+}
+
+ul.bannerList li.banner3 div.bannerBg {
+    background: linear-gradient(135deg, rgba(163, 179, 134, 0.6), rgba(235, 212, 222, 0.6), rgba(105, 118, 173, 0.6));
+}
+
+div.titleBox,
+div.bannerAlbum {
     width: 50%;
     height: 100%;
     float: left;
 }
 
-div.titleBox span{
+div.titleBox span {
     display: inline-block;
     width: 100%;
     height: 33.3%;
     text-align: center;
     text-indent: 90px;
 }
-li.banner1 div.titleBox span.txt1{
+
+li.banner1 div.titleBox span.txt1 {
     line-height: 300px;
     font-size: 25px;
 }
-li.banner1 div.titleBox span.txt3{
+
+li.banner1 div.titleBox span.txt3 {
     font-size: 40px;
 }
-li.banner2 div.titleBox span.txt1{
+
+li.banner2 div.titleBox span.txt1 {
     line-height: 300px;
     font-size: 25px;
 }
-li.banner2 div.titleBox span.txt2{
+
+li.banner2 div.titleBox span.txt2 {
     line-height: 163px;
     font-size: 45px;
 }
-li.banner2 div.titleBox span.txt3{
+
+li.banner2 div.titleBox span.txt3 {
     font-size: 30px;
 }
-li.banner3 div.titleBox span.txt1{
+
+li.banner3 div.titleBox span.txt1 {
     line-height: 300px;
     font-size: 25px;
 }
-li.banner3 div.titleBox span.txt2{
+
+li.banner3 div.titleBox span.txt2 {
     line-height: 163px;
     font-size: 45px;
 }
-li.banner3 div.titleBox span.txt3{
+
+li.banner3 div.titleBox span.txt3 {
     font-size: 18px;
 }
-div.bannerAlbum img{
+
+div.bannerAlbum img {
     width: 57%;
     height: auto;
     cursor: pointer;
@@ -394,87 +450,98 @@ div.bannerAlbum img{
 }
 
 /* banner left, right button*/
-.xi-angle-left-thin,        
-.xi-angle-right-thin{ 
+.xi-angle-left-thin,
+.xi-angle-right-thin {
     font-size: 60px;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     border: none;
-    background-color: transparent;  
+    background-color: transparent;
     cursor: pointer;
     opacity: 0.3;
     margin: 0 50px;
 }
-.leftBtn{
+
+.leftBtn {
     left: 0;
 }
-.rightBtn{
+
+.rightBtn {
     right: 0;
 }
 
 /* album section */
-section.albumWrap{
+section.albumWrap {
     width: 100%;
     /* height: 312px; */
     margin-bottom: 30px;
 }
 
-div.albumInner{
+div.albumInner {
     width: 1400px;
     height: 100%;
     margin: 0 auto;
 }
+
 div.newAlbum,
-div.todaysAlbum{
+div.todaysAlbum {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-div.newAlbum h2.subTitle{
+
+div.newAlbum h2.subTitle {
     background-image: url(../images/new-album.png);
 }
-div.todaysAlbum h2.subTitle{
+
+div.todaysAlbum h2.subTitle {
     background-image: url(../images/todays-album.png);
 }
+
 div.newAlbum h2.subTitle,
-div.todaysAlbum h2.subTitle{
+div.todaysAlbum h2.subTitle {
     background-repeat: no-repeat;
     background-size: contain;
     width: 12%;
     height: 138px;
     text-indent: -9999px;
 }
+
 ul.newAlbumList,
-ul.todaysAlbumList
-{
+ul.todaysAlbumList {
     display: flex;
 }
+
 ul.newAlbumList li,
-ul.todaysAlbumList li{
-    width: 16%; /* 138px  */
+ul.todaysAlbumList li {
+    width: 16%;
+    /* 138px  */
     margin: 7px;
     position: relative;
 }
+
 ul.newAlbumList li a img,
-ul.todaysAlbumList li a img{
+ul.todaysAlbumList li a img {
     width: 100%;
     height: 100%;
 }
+
 ul.newAlbumList li:before,
-ul.todaysAlbumList li:before{
+ul.todaysAlbumList li:before {
     content: '';
     position: absolute;
     font-size: 0;
     width: 100%;
     height: 40%;
     bottom: 0;
-    left: 0;        
-    background-image: linear-gradient(transparent, rgba(0,0,0,0.8));
+    left: 0;
+    background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
     cursor: pointer;
 }
+
 ul.newAlbumList li a.artist,
-ul.todaysAlbumList li a.artist{
+ul.todaysAlbumList li a.artist {
     display: block;
     width: 80%;
     padding: 0 10%;
@@ -484,13 +551,16 @@ ul.todaysAlbumList li a.artist{
     font-size: 14px;
     color: white;
     transition: all 0.2s;
-    text-overflow: ellipsis;    /* 넘치는 부분을 ...으로 표시 */
+    text-overflow: ellipsis;
+    /* 넘치는 부분을 ...으로 표시 */
     overflow: hidden;
-    white-space: nowrap;    /* 줄 바꿈 X */
+    white-space: nowrap;
+    /* 줄 바꿈 X */
     font-weight: lighter;
 }
+
 ul.newAlbumList li a.albumInfo,
-ul.todaysAlbumList li a.albumInfo{
+ul.todaysAlbumList li a.albumInfo {
     display: block;
     width: 80%;
     padding: 0 10%;
@@ -500,13 +570,14 @@ ul.todaysAlbumList li a.albumInfo{
     font-size: 14px;
     color: transparent;
     transition: all 0.2s;
-    text-overflow: ellipsis; 
+    text-overflow: ellipsis;
     overflow: hidden;
-    white-space: nowrap;  
+    white-space: nowrap;
     font-weight: lighter;
 }
+
 ul.newAlbumList li div.hoverBg,
-ul.todaysAlbumList li div.hoverBg{
+ul.todaysAlbumList li div.hoverBg {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -516,43 +587,50 @@ ul.todaysAlbumList li div.hoverBg{
 }
 
 /* 띠배너 */
-div.ddiBannerWrap{
+div.ddiBannerWrap {
     width: 100%;
     height: 74px;
 }
-div.ddiBanner{
+
+div.ddiBanner {
     position: relative;
     height: 100%;
 }
-div.ddiBanner a{
+
+div.ddiBanner a {
     position: absolute;
     left: 0;
     top: 0;
     opacity: 0;
 }
-div.ddiBanner a:nth-child(1){
+
+div.ddiBanner a:nth-child(1) {
     opacity: 1;
 }
-div.ddiBanner a img{
+
+div.ddiBanner a img {
     width: 100%;
 }
 
 /* concert section */
-section.concertWrap{
+section.concertWrap {
     width: 100%;
     height: auto;
     margin: 120px 0;
 }
-div.concertInner{
+
+div.concertInner {
     width: 1400px;
     height: 100%;
     margin: 0 auto;
 }
-div.concert{
+
+div.concert {
     display: flex;
     justify-content: center;
 }
-div.concert h2.subTitle{
+
+div.concert h2.subTitle {
     background-image: url(../images/concert.png);
     background-repeat: no-repeat;
     background-size: contain;
@@ -563,10 +641,11 @@ div.concert h2.subTitle{
     padding-right: 100px;
 }
 
-ul.concertList{
+ul.concertList {
     display: flex;
 }
-ul.concertList li{ 
+
+ul.concertList li {
     width: 216px;
     height: 308px;
     margin: 0 7px;
@@ -578,31 +657,34 @@ ul.concertList li a {
     width: 100%;
     height: 100%;
 }
-ul.concertList li.moreConcert a{
+
+ul.concertList li.moreConcert a {
     width: 87%;
     height: 90%;
     position: relative;
     right: -28px;
     bottom: -29px;
 }
+
 ul.concertList li:nth-child(1) a img,
 ul.concertList li:nth-child(2) a img,
-ul.concertList li:nth-child(3) a img{
+ul.concertList li:nth-child(3) a img {
     width: 100%;
     height: 100%;
-    position: relative;          
+    position: relative;
     right: -28px;
     bottom: -29px;
     transition: all 0.1s;
 }
-ul.concertList li.moreConcert a img{
+
+ul.concertList li.moreConcert a img {
     float: left;
     width: 50%;
     height: 50%;
 }
 
 /* 공사중 */
-div.concertInfo{
+div.concertInfo {
     width: 940px;
     padding: 30px;
     position: fixed;
@@ -610,54 +692,64 @@ div.concertInfo{
     left: 50%;
     transform: translate(-50%, -50%);
     display: none;
-    background-color:white;
+    background-color: white;
     z-index: 9999;
     opacity: 0;
 }
-div.concertPoster{
+
+div.concertPoster {
     float: left;
 }
-div.concertPoster img{
+
+div.concertPoster img {
     width: 180px;
     height: 254px;
 }
-div.concertTxt{
+
+div.concertTxt {
     width: 75%;
     float: left;
     padding-left: 30px;
 }
-div.concertTxt p.title{
+
+div.concertTxt p.title {
     font-size: 30px;
     padding: 10px 0 20px 0;
     line-height: 40px;
 }
-div.concertTxt p.titleSub{
+
+div.concertTxt p.titleSub {
     line-height: 25px;
 }
-div.concertDetail{
+
+div.concertDetail {
     width: 100%;
     padding-top: 50px;
 }
+
 div.concertDetail dl.detailLeft,
-div.concertDetail dl.detailRight{
+div.concertDetail dl.detailRight {
     width: 300px;
     float: left;
 }
+
 div.concertDetail dl.detailLeft dt,
-div.concertDetail dl.detailRight dt{
+div.concertDetail dl.detailRight dt {
     width: 67px;
     height: 32px;
     float: left;
 }
+
 div.concertDetail dl.detailLeft dd,
-div.concertDetail dl.detailRight dd{
+div.concertDetail dl.detailRight dd {
     width: 218px;
     min-height: 32px;
     padding-left: 15px;
     float: left;
     font-weight: lighter;
 }
-button.reservationBtn{
+
+button.reservationBtn {
     position: absolute;
     bottom: 20px;
     right: 20px;
@@ -669,10 +761,11 @@ button.reservationBtn{
     color: rgb(66, 211, 103);
     background-color: white;
     transition: all 0.5s;
-    border:1px solid rgb(66, 211, 103);
+    border: 1px solid rgb(66, 211, 103);
     cursor: pointer;
 }
-button.closeBtn{
+
+button.closeBtn {
     position: absolute;
     top: 10px;
     right: 10px;
@@ -683,44 +776,50 @@ button.closeBtn{
     background-color: transparent;
     cursor: pointer;
 }
-div.bgLayer{
-    height:100%;
-    width:100%; 
-    position:fixed; 
-    left:0; 
-    top:0;      
-    background:black; 
+
+div.bgLayer {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: black;
     display: none;
-    opacity:0;
+    opacity: 0;
     z-index: 4;
 }
 
 /* remake section */
-section.remakeWrap{
+section.remakeWrap {
     width: 100%;
-    height: auto; /* 443px*/
+    height: auto;
+    /* 443px*/
 }
-div.remakeInner{
+
+div.remakeInner {
     width: 1400px;
     height: auto;
     margin: 0 auto;
 }
-div.remakeInner h2.subTitle{
+
+div.remakeInner h2.subTitle {
     width: 100%;
     height: 53px;
     background-color: rgba(207, 203, 192, 0.7);
     text-align: center;
-    line-height: 53px;   
+    line-height: 53px;
 }
-div.remakeInner h2.subTitle span{
+
+div.remakeInner h2.subTitle span {
     display: inline-block;
     font-size: 30px;
     font-weight: 900;
     position: relative;
-    font-family:'ChosunCentennial';
+    font-family: 'ChosunCentennial';
 }
+
 div.remakeInner h2.subTitle span::before,
-div.remakeInner h2.subTitle span::after{
+div.remakeInner h2.subTitle span::after {
     position: absolute;
     top: 0;
     left: 0;
@@ -728,70 +827,86 @@ div.remakeInner h2.subTitle span::after{
     bottom: 0;
     content: attr(data-text);
 }
-div.remakeInner h2.subTitle span::before{
+
+div.remakeInner h2.subTitle span::before {
     color: purple;
     z-index: -1;
-    animation:remake1 0.3s ease infinite;
+    animation: remake1 0.3s ease infinite;
 }
-div.remakeInner h2.subTitle span::after{
+
+div.remakeInner h2.subTitle span::after {
     color: cyan;
     z-index: -2;
-    animation:remake2 0.3s ease infinite reverse;
+    animation: remake2 0.3s ease infinite reverse;
 }
-@keyframes remake1{
-    0%{
+
+@keyframes remake1 {
+    0% {
         transform: translate(-1.5px, 1.5px);
     }
-    25%{
+
+    25% {
         transform: translate(-3px, 3px);
     }
-    50%{
+
+    50% {
         transform: translate(1.5px, 1.5px);
     }
-    75%{
+
+    75% {
         transform: translate(1.5px, -3px);
     }
-    100%{
+
+    100% {
         transform: translate(-1.5px, 1.5px);
     }
 }
-@keyframes remake2{
-    0%{
+
+@keyframes remake2 {
+    0% {
         transform: translate(-1px, 1px);
     }
-    25%{
+
+    25% {
         transform: translate(-2px, 2px);
     }
-    50%{
+
+    50% {
         transform: translate(1px, 1px);
     }
-    75%{
+
+    75% {
         transform: translate(1px, -2px);
     }
-    100%{
+
+    100% {
         transform: translate(-1px, 1px);
     }
 }
-div.remakeInner div.remakeAll{
+
+div.remakeInner div.remakeAll {
     width: 1000px;
     height: auto;
     margin: 90px auto;
     display: flex;
     justify-content: space-between;
 }
+
 div.remakeAll div.original,
-div.remakeAll div.remake{
+div.remakeAll div.remake {
     width: 311px;
     height: auto;
 }
+
 div.remakeAll div.originalAlbum,
-div.remakeAll div.remakeAlbum{
+div.remakeAll div.remakeAlbum {
     width: 222px;
     height: auto;
     position: relative;
 }
+
 div.originalAlbum div.disk,
-div.remakeAlbum div.disk{
+div.remakeAlbum div.disk {
     z-index: -1;
     width: 214px;
     height: 214px;
@@ -803,8 +918,9 @@ div.remakeAlbum div.disk{
     box-shadow: 4px 14px 40px rgba(0, 0, 0, 0.3);
     transition: all 0.4s ease-in-out;
 }
+
 div.originalAlbum div.disk div.diskInner,
-div.remakeAlbum div.disk div.diskInner{
+div.remakeAlbum div.disk div.diskInner {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -814,14 +930,17 @@ div.remakeAlbum div.disk div.diskInner{
     border-radius: 50%;
     border: 2px dashed rgba(255, 255, 255, 0.4);
 }
-div.originalAlbum div.disk div.diskInner{
+
+div.originalAlbum div.disk div.diskInner {
     background-color: rgb(226, 143, 3);
 }
-div.remakeAlbum div.disk div.diskInner{
+
+div.remakeAlbum div.disk div.diskInner {
     background-color: rgb(251, 243, 193);
 }
+
 div.originalAlbum div.disk div.diskInner:after,
-div.remakeAlbum div.disk div.diskInner:after{
+div.remakeAlbum div.disk div.diskInner:after {
     content: "";
     position: absolute;
     top: 50%;
@@ -831,70 +950,86 @@ div.remakeAlbum div.disk div.diskInner:after{
     height: 7px;
     background-color: black;
     border-radius: 50%;
-}  
+}
+
 div.remakeAll div.originalAlbum a img,
-div.remakeAll div.remakeAlbum a img{
+div.remakeAll div.remakeAlbum a img {
     width: 100%;
     box-shadow: 2px 14px 20px rgba(0, 0, 0, 0.3);
 }
-div.original div.subText{
+
+div.original div.subText {
     width: 100%;
     text-align: right;
     margin-top: 20px;
 }
-div.remake div.subText{
+
+div.remake div.subText {
     width: 100%;
     margin-top: 20px;
 }
+
 div.subText span.albumName,
-div.subText span.release{
+div.subText span.release {
     font-size: 14px;
     font-weight: bold;
     letter-spacing: 4px;
     line-height: 23px;
 }
-div.songName{
+
+div.songName {
     align-self: center;
-    margin-left: 50px; 
+    margin-left: 50px;
     font-weight: bold;
     letter-spacing: 10px;
     line-height: 40px;
     transform: translateY(-50%);
 }
-div.songName div.topText{
+
+div.songName div.topText {
     text-indent: -30px;
 }
-div.songName span{
+
+div.songName span {
     animation: songName 0.8s infinite alternate;
     display: inline-block;
     width: 17px;
     font-size: 25px;
 }
-div.topText span:nth-child(1){
+
+div.topText span:nth-child(1) {
     animation-delay: 0.1s;
 }
-div.topText span:nth-child(2){
+
+div.topText span:nth-child(2) {
     animation-delay: 0.2s;
 }
-div.topText span:nth-child(3){
+
+div.topText span:nth-child(3) {
     animation-delay: 0.3s;
 }
-div.topText span:nth-child(4){
+
+div.topText span:nth-child(4) {
     animation-delay: 0.4s;
 }
-div.bottomText span:nth-child(1){
+
+div.bottomText span:nth-child(1) {
     animation-delay: 0.6s;
 }
-div.bottomText span:nth-child(2){
+
+div.bottomText span:nth-child(2) {
     animation-delay: 0.7s;
 }
-div.bottomText span:nth-child(3){
+
+div.bottomText span:nth-child(3) {
     animation-delay: 0.8s;
 }
-div.bottomText span:nth-child(4){
+
+div.bottomText span:nth-child(4) {
     animation-delay: 0.9s;
 }
-div.bottomText span:nth-child(5){
+
+div.bottomText span:nth-child(5) {
     animation-delay: 1s;
 }
 
@@ -902,208 +1037,255 @@ div.bottomText span:nth-child(5){
     0% {
         transform: translateY(0);
     }
+
     100% {
         transform: translateY(15px);
     }
 }
+
 @keyframes disk {
     0% {
-      transform: rotate(0);
+        transform: rotate(0);
     }
+
     100% {
-      transform: rotate(360deg);
+        transform: rotate(360deg);
     }
 }
-  
+
 /* footer */
 footer.footerWrap {
     width: 100%;
 }
-div.footerInner{
+
+div.footerInner {
     width: 1400px;
     margin: 0 auto;
 }
-div.fTop{
+
+div.fTop {
     width: 100%;
     padding: 20px 0;
     border-top: 1px solid #333333;
     border-bottom: 1px solid #333333;
 }
-div.fTop div.fTopLeft{
+
+div.fTop div.fTopLeft {
     float: left;
 }
-div.fTop div.fTopLeft ul{
+
+div.fTop div.fTopLeft ul {
     margin-left: 40px;
 }
-div.fTop div.fTopRight ul{
+
+div.fTop div.fTopRight ul {
     margin-right: 40px;
 }
-div.fTop div.fTopLeft ul li{
+
+div.fTop div.fTopLeft ul li {
     float: left;
     margin: 0 10px;
 }
-div.fTop div.fTopLeft ul li a{
+
+div.fTop div.fTopLeft ul li a {
     font-size: 14px;
     line-height: 30px;
     font-weight: 600;
 }
-div.fTop div.fTopRight{
+
+div.fTop div.fTopRight {
     float: right;
 }
-div.fTop div.fTopRight ul li{
+
+div.fTop div.fTopRight ul li {
     float: left;
     margin: 0 10px;
 }
-div.fTop div.fTopRight ul li a img{
+
+div.fTop div.fTopRight ul li a img {
     width: 30px;
     height: 30px;
 }
-div.fBottom{
+
+div.fBottom {
     width: 100%;
     padding: 40px 0;
     display: flex;
 }
-div.fBottom h2.fLogo{
+
+div.fBottom h2.fLogo {
     width: 200px;
     margin: 0 20px;
 }
-div.fBottom h2.fLogo img{
+
+div.fBottom h2.fLogo img {
     width: 140px;
     display: block;
     margin: 10px auto;
 }
-div.fBottom div.fInfo{
+
+div.fBottom div.fInfo {
     width: 600px;
 }
-div.fBottom div.fInfo p{
+
+div.fBottom div.fInfo p {
     line-height: 40px;
     word-spacing: 2px;
     text-align: left;
     color: #616161;
     font-size: 15px;
 }
-div.fBottom div.fSc{
+
+div.fBottom div.fSc {
     width: 600px;
     margin-right: 20px;
 }
-div.fBottom div.fSc p{
+
+div.fBottom div.fSc p {
     text-align: right;
 }
-div.fBottom div.fSc p:nth-child(1){
+
+div.fBottom div.fSc p:nth-child(1) {
     font: bold 20px "verdana";
     margin-bottom: 20px;
 }
-div.fBottom div.fSc p:nth-child(2){
+
+div.fBottom div.fSc p:nth-child(2) {
     font: bold 55px "verdana";
     margin-bottom: 20px;
 }
-div.fBottom div.fSc p:nth-child(3){
+
+div.fBottom div.fSc p:nth-child(3) {
     font-size: 18px;
 }
-.mobileLogo{
+
+.mobileLogo {
     display: none;
 }
 
 
-@media screen and (max-width:1400px){  
-    div.scrollNav{
+@media screen and (max-width:1400px) {
+    div.scrollNav {
         display: none;
     }
-    div.headerInner, 
+
+    div.headerInner,
     div.albumInner,
     div.concertInner,
     div.remakeInner,
-    div.footerInner{
+    div.footerInner {
         width: 100%;
     }
-    div.bannerInner{
+
+    div.bannerInner {
         width: 90%;
     }
-    div.titleBox, 
-    div.bannerAlbum{
+
+    div.titleBox,
+    div.bannerAlbum {
         width: 45%;
-    }   
-    button.leftBtn, 
-    button.rightBtn{
+    }
+
+    button.leftBtn,
+    button.rightBtn {
         top: 92%;
         font-size: 40px;
     }
-    button.leftBtn{
+
+    button.leftBtn {
         left: 30%;
     }
-    button.rightBtn{
+
+    button.rightBtn {
         right: 30%;
     }
 }
-@media screen and (max-width:1250px){
-    div.titleBox, div.bannerAlbum{
+
+@media screen and (max-width:1250px) {
+
+    div.titleBox,
+    div.bannerAlbum {
         width: 40%;
-    }   
-    .leftBtn{
+    }
+
+    .leftBtn {
         left: 38%;
     }
-    .rightBtn{
+
+    .rightBtn {
         right: 38%;
     }
 }
 
-@media screen and (max-width:1200px){
-    div.logoWrap{
+@media screen and (max-width:1200px) {
+    div.logoWrap {
         width: 100%;
     }
-    div.navWrap{
+
+    div.navWrap {
         width: 100%;
     }
-    button.login{
+
+    button.login {
         position: absolute;
         right: 20px;
     }
-    div.ddiBannerWrap{
+
+    div.ddiBannerWrap {
         display: none;
     }
 }
-@media screen and (max-width:1100px){
-    div.bannerInner{
+
+@media screen and (max-width:1100px) {
+    div.bannerInner {
         width: 85%;
     }
-    div.titleBox, 
-    div.bannerAlbum{
+
+    div.titleBox,
+    div.bannerAlbum {
         width: 34%;
     }
 }
 
 /* pc에서의 hover이벤트 */
-@media screen and (min-width:1024px){ 
-    ul.mainMenu li:hover a{
+@media screen and (min-width:1024px) {
+    ul.mainMenu li:hover a {
         color: rgb(65, 149, 108);
     }
+
     ul.newAlbumList li:hover a.artist,
-    ul.todaysAlbumList li:hover a.artist{
+    ul.todaysAlbumList li:hover a.artist {
         bottom: 60%;
         z-index: 1;
     }
+
     ul.newAlbumList li:hover a.albumInfo,
-    ul.todaysAlbumList li:hover a.albumInfo{
+    ul.todaysAlbumList li:hover a.albumInfo {
         color: #c4c4c4;
         z-index: 1;
     }
+
     ul.newAlbumList li a.artist:hover,
-    ul.newAlbumList li a.albumInfo:hover{
+    ul.newAlbumList li a.albumInfo:hover {
         color: rgb(66, 211, 103);
     }
+
     ul.todaysAlbumList li a.artist:hover,
-    ul.todaysAlbumList li a.albumInfo:hover{
+    ul.todaysAlbumList li a.albumInfo:hover {
         color: rgb(52, 202, 248);
     }
+
     ul.newAlbumList li:hover div.hoverBg,
-    ul.todaysAlbumList li:hover div.hoverBg{
+    ul.todaysAlbumList li:hover div.hoverBg {
         background-color: rgba(0, 0, 0, 0.8);
     }
-    ul.concertList li a img:hover{
+
+    ul.concertList li a img:hover {
         right: -15px;
         bottom: -16px;
     }
-    ul.concertList li.moreConcert:hover a:after{
+
+    ul.concertList li.moreConcert:hover a:after {
         content: '';
         width: 100%;
         height: 100%;
@@ -1113,118 +1295,146 @@ div.fBottom div.fSc p:nth-child(3){
         z-index: 1;
         background-color: rgba(0, 0, 0, 0.7);
     }
-    ul.concertList li.moreConcert:hover span{
+
+    ul.concertList li.moreConcert:hover span {
         font-size: 15px;
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%,-50%);
+        transform: translate(-50%, -50%);
         z-index: 2;
         color: white;
     }
-    button.reservationBtn:hover{
+
+    button.reservationBtn:hover {
         background-color: rgb(66, 211, 103);
         color: white;
     }
-    button.closeBtn:hover{
+
+    button.closeBtn:hover {
         color: rgb(66, 211, 103);
     }
+
     div.original:hover div.disk,
-    div.remake:hover div.disk{
+    div.remake:hover div.disk {
         animation: disk 8s ease infinite;
         left: 52%;
     }
-    div.fTop div.fTopLeft ul li:hover a{
-        text-decoration:underline;
+
+    div.fTop div.fTopLeft ul li:hover a {
+        text-decoration: underline;
     }
 }
 
 /* tablet */
-@media screen and (max-width:1023px){
-    div.bannerInner{
+@media screen and (max-width:1023px) {
+    div.bannerInner {
         width: 100%;
         border-radius: 0;
     }
-    div.titleBox, div.bannerAlbum{
+
+    div.titleBox,
+    div.bannerAlbum {
         width: 32%;
     }
-    div.navWrap fieldset{
+
+    div.navWrap fieldset {
         width: 290px;
     }
-    section.albumWrap{
+
+    section.albumWrap {
         margin: 100px 0;
     }
-    div.newAlbum, div.todaysAlbum{
+
+    div.newAlbum,
+    div.todaysAlbum {
         display: block;
     }
-    div.newAlbum h2.subTitle, div.todaysAlbum h2.subTitle {
+
+    div.newAlbum h2.subTitle,
+    div.todaysAlbum h2.subTitle {
         width: 150px;
         height: 32px;
         margin: 50px 0 10px 10px;
     }
-    div.newAlbum h2.subTitle{
+
+    div.newAlbum h2.subTitle {
         background-image: url(../images/new-album-wide.png);
     }
+
     div.todaysAlbum h2.subTitle {
         background-image: url(../images/todays-album-wide.png);
     }
-    ul.newAlbumList li:before, 
-    ul.todaysAlbumList li:before{
-        background-image: linear-gradient(transparent, rgba(0,0,0,0.9));
+
+    ul.newAlbumList li:before,
+    ul.todaysAlbumList li:before {
+        background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.9));
     }
-    ul.newAlbumList li a.artist, 
-    ul.todaysAlbumList li a.artist{
+
+    ul.newAlbumList li a.artist,
+    ul.todaysAlbumList li a.artist {
         font-size: 12px;
         bottom: 25%;
     }
+
     ul.newAlbumList li a.albumInfo,
-    ul.todaysAlbumList li a.albumInfo{
+    ul.todaysAlbumList li a.albumInfo {
         color: #ddd;
         font-size: 12px;
         bottom: 8%;
     }
-    div.concert{
+
+    div.concert {
         display: block;
     }
-    div.concert h2.subTitle{
+
+    div.concert h2.subTitle {
         background-image: url(../images/concert-wide.png);
         width: 120px;
         height: 48px;
         margin-left: 10px;
         padding-right: 0;
     }
-    ul.concertList{
+
+    ul.concertList {
         justify-content: center;
     }
-    ul.concertList li{
+
+    ul.concertList li {
         width: 25%;
         height: auto;
     }
-    ul.concertList li:nth-child(1) a img, 
-    ul.concertList li:nth-child(2) a img, 
-    ul.concertList li:nth-child(3) a img{
+
+    ul.concertList li:nth-child(1) a img,
+    ul.concertList li:nth-child(2) a img,
+    ul.concertList li:nth-child(3) a img {
         right: -7%;
         bottom: -5%;
     }
-    ul.concertList li:nth-child(4) a{
+
+    ul.concertList li:nth-child(4) a {
         right: -5%;
         bottom: -10%;
     }
+
     div.concertInfo {
         width: 80%;
     }
-    div.concertPoster{
+
+    div.concertPoster {
         float: none;
         position: relative;
         left: 50%;
         transform: translateX(-90px);
         margin-bottom: 30px;
     }
+
     div.concertTxt {
         width: 95%;
         float: none;
     }
-    ul.concertList li.moreConcert a:after{
+
+    ul.concertList li.moreConcert a:after {
         content: '';
         width: 100%;
         height: 100%;
@@ -1234,119 +1444,149 @@ div.fBottom div.fSc p:nth-child(3){
         z-index: 1;
         background-color: rgba(0, 0, 0, 0.7);
     }
-    ul.concertList li.moreConcert span{
+
+    ul.concertList li.moreConcert span {
         font-size: 15px;
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%,-50%);
+        transform: translate(-50%, -50%);
         z-index: 2;
         color: white;
     }
-    div.remakeInner div.remakeAll{
+
+    div.remakeInner div.remakeAll {
         width: 100%;
         justify-content: space-around;
     }
-    div.remakeAll div.original, 
-    div.remakeAll div.remake{
+
+    div.remakeAll div.original,
+    div.remakeAll div.remake {
         width: 240px;
     }
-    div.remakeAll div.originalAlbum, 
+
+    div.remakeAll div.originalAlbum,
     div.remakeAll div.remakeAlbum {
         width: 180px;
     }
-    div.originalAlbum div.disk, 
-    div.remakeAlbum div.disk{
+
+    div.originalAlbum div.disk,
+    div.remakeAlbum div.disk {
         width: 172px;
         height: 172px;
     }
+
     div.original div.disk,
-    div.remake div.disk{
+    div.remake div.disk {
         animation: disk 8s ease infinite;
         left: 45%;
     }
-    div.songName{
-        letter-spacing:5px;
+
+    div.songName {
+        letter-spacing: 5px;
     }
-    div.songName span{
+
+    div.songName span {
         font-size: 22px;
     }
-    div.subText span.albumName, 
-    div.subText span.release{
+
+    div.subText span.albumName,
+    div.subText span.release {
         font-size: 15px;
     }
-    div.fTop div.fTopLeft ul li{
+
+    div.fTop div.fTopLeft ul li {
         margin: 0 7px;
     }
-    div.fBottom h2.fLogo img{
+
+    div.fBottom h2.fLogo img {
         width: 120px;
     }
-    div.fBottom div.fInfo p{
+
+    div.fBottom div.fInfo p {
         line-height: 30px;
         margin-left: 30px;
         font-size: 14px;
     }
-    div.fBottom div.fSc p:nth-child(2){
+
+    div.fBottom div.fSc p:nth-child(2) {
         font-size: 40px;
     }
 }
-@media screen and (max-width:767px){
+
+@media screen and (max-width:767px) {
     div.logoWrap {
         margin-bottom: 60px;
     }
-    ul.mainMenu{
+
+    ul.mainMenu {
         display: none;
     }
-    div.mobileBtn, div.mobileNav{
+
+    div.mobileBtn,
+    div.mobileNav {
         display: block;
     }
-    div.navWrap fieldset{
+
+    div.navWrap fieldset {
         float: none;
         height: 65%;
         left: 50%;
         transform: translateX(-50%);
         border: 2px solid rgb(65, 149, 108);
     }
-    div.navWrap fieldset input{
+
+    div.navWrap fieldset input {
         bottom: 1px;
     }
+
     div.navWrap fieldset button.searchBtn {
         width: 20px;
     }
-    section.bannerWrap{
+
+    section.bannerWrap {
         display: none;
     }
-    ul.newAlbumList, 
-    ul.todaysAlbumList{
-        flex-wrap:wrap;
+
+    ul.newAlbumList,
+    ul.todaysAlbumList {
+        flex-wrap: wrap;
         justify-content: center;
     }
-    div.newAlbum h2.subTitle, 
+
+    div.newAlbum h2.subTitle,
     div.todaysAlbum h2.subTitle {
         margin: 50px 0px 10px 10px;
     }
-    ul.newAlbumList li, 
-    ul.todaysAlbumList li{
+
+    ul.newAlbumList li,
+    ul.todaysAlbumList li {
         width: 29%;
     }
-    div.concertTxt p.title{
+
+    div.concertTxt p.title {
         font-size: 25px;
     }
-    div.concertTxt p.titleSub{
+
+    div.concertTxt p.titleSub {
         font-size: 14px;
         line-height: 22px;
     }
+
     ul.concertList li.moreConcert span {
         font-size: 12px;
     }
-    div.concertDetail{
+
+    div.concertDetail {
         padding-top: 25px;
     }
-    div.remakeInner div.remakeAll{
+
+    div.remakeInner div.remakeAll {
         flex-wrap: wrap;
         margin: 60px auto;
     }
-    div.songName{
+
+    div.songName {
         order: 1;
         display: flex;
         margin-bottom: 60px;
@@ -1354,100 +1594,124 @@ div.fBottom div.fSc p:nth-child(3){
         justify-content: center;
         transform: translateY(0);
     }
-    div.remakeAll div.original, 
-    div.remakeAll div.remake{
+
+    div.remakeAll div.original,
+    div.remakeAll div.remake {
         order: 2;
         width: 218px;
         position: relative;
     }
-    div.remakeAll div.originalAlbum, 
-    div.remakeAll div.remakeAlbum{
+
+    div.remakeAll div.originalAlbum,
+    div.remakeAll div.remakeAlbum {
         width: 150px;
     }
-    div.originalAlbum div.disk, 
-    div.remakeAlbum div.disk{
+
+    div.originalAlbum div.disk,
+    div.remakeAlbum div.disk {
         width: 142px;
         height: 142px;
         left: 40%;
     }
-    div.original div.subText, 
+
+    div.original div.subText,
     div.remake div.subText {
         text-align: center;
     }
+
     div.subText span.albumName,
-     div.subText span.release {
+    div.subText span.release {
         font-size: 12px;
     }
-    div.fTop div.fTopLeft{
+
+    div.fTop div.fTopLeft {
         text-align: center;
     }
+
     div.fTop div.fTopLeft,
-    div.fTop div.fTopRight{
+    div.fTop div.fTopRight {
         float: none;
         margin: 0 auto;
     }
-    div.fTop div.fTopRight{
+
+    div.fTop div.fTopRight {
         width: 150px;
         margin-top: 20px;
     }
-    div.fTop div.fTopLeft ul{
+
+    div.fTop div.fTopLeft ul {
         display: inline-block;
     }
+
     div.fTop div.fTopLeft ul,
-    div.fTop div.fTopRight ul{
+    div.fTop div.fTopRight ul {
         margin: 0;
     }
-    div.fTop div.fTopLeft ul li{
+
+    div.fTop div.fTopLeft ul li {
         margin: 0 5px;
     }
-    div.fTop div.fTopLeft ul li a{
+
+    div.fTop div.fTopLeft ul li a {
         font-size: 12px;
     }
+
     div.fBottom {
         display: block;
         padding: 20px 0;
     }
+
     div.fBottom h2.fLogo {
         margin: 0 auto;
     }
-    div.fBottom div.fInfo{
+
+    div.fBottom div.fInfo {
         width: 100%;
         margin: 30px 0;
     }
+
     div.fBottom div.fInfo p {
         text-align: center;
         margin: 0;
     }
-    div.fBottom div.fSc{
+
+    div.fBottom div.fSc {
         width: 100%;
         margin: 20px auto;
     }
-    div.fBottom div.fSc p{
+
+    div.fBottom div.fSc p {
         text-align: center;
     }
-    div.fBottom div.fSc p:nth-child(1){
+
+    div.fBottom div.fSc p:nth-child(1) {
         font-size: 15px;
     }
+
     div.fBottom div.fSc p:nth-child(2) {
         font-size: 35px;
     }
-    div.fBottom div.fSc p:nth-child(3){
+
+    div.fBottom div.fSc p:nth-child(3) {
         font-size: 14px;
     }
 
 }
 
-@media screen and (max-width:480px){
-    div.remakeAll div.original, 
-    div.remakeAll div.remake{
+@media screen and (max-width:480px) {
+
+    div.remakeAll div.original,
+    div.remakeAll div.remake {
         width: 180px;
     }
-    div.remakeAll div.originalAlbum, 
-    div.remakeAll div.remakeAlbum{
+
+    div.remakeAll div.originalAlbum,
+    div.remakeAll div.remakeAlbum {
         width: 130px;
     }
-    div.originalAlbum div.disk, 
-    div.remakeAlbum div.disk{
+
+    div.originalAlbum div.disk,
+    div.remakeAlbum div.disk {
         width: 123px;
         height: 123px;
     }
