@@ -10,7 +10,6 @@
     url("../font/NotoSansCJKkr-Bold-Alphabetic.woff") format('woff'),
     url("../font/NotoSansCJKkr-Bold-Alphabetic.woff2") format('woff2'),
     url("../font/NotoSansCJKkr-Bold-Alphabetic.ttf") format('truetype');
-  /*ttf*/
 }
 
 /* 국문medium */
@@ -22,7 +21,6 @@
     url("../font/NotoSansCJKkr-Medium-Alphabetic.woff") format('woff'),
     url("../font/NotoSansCJKkr-Medium-Alphabetic.woff2") format('woff2'),
     url("../font/NotoSansCJKkr-Medium-Alphabetic.ttf") format('truetype');
-  /*ttf*/
 }
 
 /* 국문regular */
@@ -34,7 +32,6 @@
     url("../font/NotoSansCJKkr-Regular-Alphabetic.woff") format('woff'),
     url("../font/NotoSansCJKkr-Regular-Alphabetic.woff2") format('woff2'),
     url("../font/NotoSansCJKkr-Regular-Alphabetic.ttf") format('truetype');
-  /*ttf*/
 }
 
 
@@ -49,7 +46,6 @@
     url('../font/Roboto-Bold.woff') format('woff'),
     url('../font/Roboto-Bold.woff2') format('woff2'),
     url('../font/Roboto-Bold.ttf') format('truetype');
-  /*ttf*/
 }
 
 /* 영문 Medium */
@@ -61,7 +57,6 @@
     url('../font/Roboto-Medium.woff') format('woff'),
     url('../font/Roboto-Medium.woff2') format('woff2'),
     url('../font/Roboto-Medium.ttf') format('truetype');
-  /*ttf*/
 }
 
 /* 영문 Regular */
@@ -73,7 +68,6 @@
     url('../font/Roboto-Regular.woff') format('woff'),
     url('../font/Roboto-Regular.woff2') format('woff2'),
     url('../font/Roboto-Regular.ttf') format('truetype');
-  /*ttf*/
 }
 
 html,
